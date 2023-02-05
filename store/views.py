@@ -4,10 +4,12 @@ import json
 import datetime
 # from .models import *
 # from .utils import cookieCart, cartData, guestOrder
+from .models import Product
 
 # Create your views here.
 def store(request):
-    context={}
+    products=Product.objects.all()
+    context={'products':products}
     return render(request,'store.html',context=context)
 
 def home(request):
