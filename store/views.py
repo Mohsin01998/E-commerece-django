@@ -6,9 +6,9 @@ import datetime
 # from .utils import cookieCart, cartData, guestOrder
 
 # Create your views here.
-def shope(request):
+def store(request):
     context={}
-    return render(request,'shope.html',context=context)
+    return render(request,'store.html',context=context)
 
 def home(request):
     return render(request,'index.html')
