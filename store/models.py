@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 
 class Customer(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,null=True,blank=True)
-    name=models.CharField(max_length=200,null=True)
-    email = models.CharField(max_length=200, null=True)
+    name=models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
 
     def __str__(self):
         return self.name
@@ -44,16 +44,18 @@ class Order(models.Model):
                 shipping=True
         return shipping
 
+
     @property
     def get_cart_total(self):
         orderitems=self.orderitem_set.all()
         total=sum([item.get_total for item in orderitems])
         return total
 
+
     @property
     def get_cart_items(self):
         orderitems = self.orderitem_set.all()
-        total = sum([item.quantity for item in orderitems])
+        total =sum([item.quantity for item in orderitems])
         return total
 
 
@@ -61,7 +63,7 @@ class Order(models.Model):
 class OrderItem(models.Model):
     product=models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     order=models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
-    quantity=models.IntegerField(default=0,null=True,blank=True)
+    quantity=models.IntegerField(default=0,null=True)
     date_added=models.DateTimeField(auto_now_add=True)
 
     @property

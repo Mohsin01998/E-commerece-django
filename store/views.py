@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import json
 import datetime
-# from .models import *
-# from .utils import cookieCart, cartData, guestOrder
 from .models import Product, Order, OrderItem, ShippingAddress
 
 
@@ -37,8 +35,8 @@ def updateItem(request):
     data=json.loads(request.body)
     productId=data['productId']
     action = data['action']
-    print("productId:",productId)
     print("action:",action)
+    print("productId:",productId)
     customer=request.user.customer
     product=Product.objects.get(id=productId)
     order,created=Order.objects.get_or_create(customer=customer,complete=False)
