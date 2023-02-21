@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kwo&vux!)r(f$mrozzq=2l=*0g-kq=xwnsye*9okar&$4eztf6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['54.189.165.222']
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT=os.path.join(BASE_DIR , 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR , 'static')
 ]
