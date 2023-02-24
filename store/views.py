@@ -3,8 +3,30 @@ from django.http import JsonResponse
 import json
 import datetime
 from .models import Product, Order, OrderItem, ShippingAddress
+import joblib
+import random
 
 
+
+
+def getBotResponse(request):
+    responses = joblib.load("labelencoder/ecomresponses.pkl")
+    vectorizer = joblib.load("vectorizer/ecomtext_vectorizer.pkl")
+    model = joblib.load("model/ecomchatbot_model.pkl")
+    le = joblib.load("labelencoder/ecomle.pkl")
+    # usertext =  request.args.get('msg')
+    chat = []
+    usertext = request.GET['msg']
+    chat.append(usertext)
+    print("chat: ",chat)
+    # chat = pd.Series(usertext)
+    X_test_dtm1 = vectorizer.transform(chat)
+    y_pred_class1 = model.predict(X_test_dtm1)
+    z = le.inverse_transform([y_pred_class1[0]])
+    reply = random.choice(responses[z[0]][0])
+    print("reply: ",reply)
+
+    return JsonResponse(reply,safe=False)
 def processOrder(request):
     transaction_id=datetime.datetime.now().timestamp()
     data=json.loads(request.body)
