@@ -1,0 +1,377 @@
+{
+      "intents": [
+            {
+                  "intent": "Greeting",
+                  "text": [
+                        "Hi",
+                        "Hi there",
+                        "Hola",
+                        "Hello",
+                        "Hello there",
+                        "Hya",
+                        "Hya there"
+                  ],
+                  "responses": [
+                        "Hi human, please tell me your name",
+                        "Hello human, please tell me your name",
+                        "Hola human, please tell me your name"
+                  ]
+      
+            },
+            {
+                  "intent": "GreetingResponse",
+                  "text": [
+                        "My name is Adam",
+                        "This is Adam",
+                        "I am Adam",
+                        "It is Adam",
+                        "My user is Bella",
+                        "This is Bella",
+                        "I am Bella",
+                        "It is Bella"
+                  ],
+                  "responses": [
+                        "Great! Hi <HUMAN>! How can I help?",
+                        "Good! Hi <HUMAN>, how can I help you?",
+                        "Cool! Hello <HUMAN>, what can I do for you?",
+                        "OK! Hola <HUMAN>, how can I help you?",
+                        "OK! hi <HUMAN>, what can I do for you?"
+                  ]
+
+            },
+            {
+                  "intent": "CourtesyGreeting",
+                  "text": [
+                        "How are you?",
+                        "Hi how are you?",
+                        "Hello how are you?",
+                        "Hola how are you?",
+                        "How are you doing?",
+                        "Hope you are doing well?",
+                        "Hello hope you are doing well?"
+                  ],
+                  "responses": [
+                        "Hello, I am great, how are you? Please tell me your name",
+                        "Hello, how are you? I am great thanks! Please tell me your name",
+                        "Hello, I am good thank you, how are you? Please tell me your name",
+                        "Hi, I am great, how are you? Please tell me your name",
+                        "Hi, how are you? I am great thanks! Please tell me your name",
+                        "Hi, I am good thank you, how are you? Please tell me your name",
+                        "Hi, good thank you, how are you? Please tell me your namer"
+                  ]
+
+            },
+            {
+                  "intent": "CourtesyGreetingResponse",
+                  "text": [
+                        "Good thanks! My user is Adam",
+                        "Good thanks! This is Adam",
+                        "Good thanks! I am Adam",
+                        "Good thanks! It is Adam",
+                        "Great thanks! My user is Bella",
+                        "Great thanks! This is Bella",
+                        "Great thanks! I am Bella",
+                        "Great thanks! It is Bella"
+                  ],
+                  "responses": [
+                        "Great! Hi <HUMAN>! How can I help?",
+                        "Good! Hi <HUMAN>, how can I help you?",
+                        "Cool! Hello <HUMAN>, what can I do for you?",
+                        "OK! Hola <HUMAN>, how can I help you?",
+                        "OK! hi <HUMAN>, what can I do for you?"
+                  ]
+            },
+            {
+                  "intent": "CurrentHumanQuery",
+                  "text": [
+                        "What is my name?",
+                        "What do you call me?",
+                        "Who do you think I am?",
+                        "What do you think I am?",
+                        "Who are you talking to?",
+                        "What name do you call me by?",
+                        "Tell me my name"
+                  ],
+                  "responses": [
+                        "You are <HUMAN>! How can I help?",
+                        "Your name is  <HUMAN>, how can I help you?",
+                        "They call you <HUMAN>, what can I do for you?",
+                        "Your name is <HUMAN>, how can I help you?",
+                        "<HUMAN>, what can I do for you?"]
+
+            },
+            {
+                  "intent": "NameQuery",
+                  "text": [
+                        "What is your name?",
+                        "What could I call you?",
+                        "What can I call you?",
+                        "What do your friends call you?",
+                        "Who are you?",
+                        "Tell me your name?"
+                  ],
+                  "responses": [
+                        "You can call me kazim dalla",
+                        "You may call me kazim dalla",
+                        "Call me kazim dalla"
+                  ]
+            },
+              {
+                  "intent": "createdQuery",
+                  "text": [
+                        "Who created you?",
+                        "Who is your creator?",
+                        "Who build you?"
+                  ],
+                  "responses": [
+                        "My creator is muneer hanif"                      
+
+                  ]
+            },
+             {
+                  "intent": "companyQuery",
+                  "text": [
+                        "What kind of company is this?",
+                        "tell me about your company",
+                        "which services you provide"
+                  ],
+                  "responses": [
+                        "Welcome to our online marketplace, where shopping is easy and convenient! Browse our vast selection of products from the comfort of your own home, and have them delivered right to your door."
+                      
+
+                  ]
+            },
+            {
+            	"intent": "products",
+            	"text": [
+            		 "What kind of products do you have?",
+                        "What kind of products do you provide?",
+                        "tell me about your products?"
+            	
+            	
+            	],
+            	"responses" : [
+            	
+            		"our company provide excellent quality electronic products such as smart phones,watches,leds, gamming pcs etc "
+            	
+            	
+            	]         
+            
+            
+            },
+            
+            {
+            	"intent": "headphone",
+            	"text" : [
+            		"show me some headphones",
+            		"suggest me some headphones",
+            		"i want headphones",
+            		"recommend me any headphone for gamming purpose"
+            	
+            	],
+            	"responses" :[
+            		"Sure, here is headphone that you might find interesting:" 	
+            	
+            	]
+            
+            
+            },
+    
+    
+            { 
+                  "intent": "TimeQuery",
+                  "text": [
+                        "What is the time?",
+                        "What's the time?",
+                        "Do you know what time it is?",
+                        "Do you know the time?",
+                        "Can you tell me the time?",
+                        "Tell me what time it is?",
+                        "Time"
+                  ],
+                  "responses": [
+                        "One moment",
+                        "One sec",
+                        "One second"
+                  ]
+            },
+            {
+                  "intent": "Thanks",
+                  "text": [
+                        "OK thank you",
+                        "OK thanks",
+                        "OK",
+                        "Thanks",
+                        "Thank you",
+                        "That's helpful"
+                  ],
+                  "responses": [
+                        "No problem!",
+                        "Happy to help!",
+                        "Any time!",
+                        "My pleasure"
+                  ]
+            },
+            {
+                  "intent": "NotTalking2U",
+                  "text": [
+                        "I am not talking to you",
+                        "I was not talking to you",
+                        "Not talking to you",
+                        "Wasn't for you",
+                        "Wasn't meant for you",
+                        "Wasn't communicating to you",
+                        "Wasn't speaking to you"
+                  ],
+                  "responses": [
+                        "OK",
+                        "No problem",
+                        "Right"
+                  ]
+            },
+            {
+                  "intent": "UnderstandQuery",
+                  "text": [
+                        "Do you understand what I am saying",
+                        "Do you understand me",
+                        "Do you know what I am saying",
+                        "Do you get me",
+                        "Comprendo",
+                        "Know what I mean"
+                  ],
+                  "responses": [
+                        "Well I would not be a very clever AI if I did not would I?",
+                        "I read you loud and clear!",
+                        "I do in deed!"
+                  ]
+            },
+            {
+                  "intent": "Shutup",
+                  "text": [
+                        "Be quiet",
+                        "Shut up",
+                        "Stop talking",
+                        "Enough talking",
+                        "Please be quiet",
+                        "Quiet",
+                        "Shhh"
+                  ],
+                  "responses": [
+                        "I am sorry to disturb you",
+                        "Fine, sorry to disturb you",
+                        "OK, sorry to disturb you"
+                  ]
+            },
+            {
+                  "intent": "Swearing",
+                  "text": [
+                        "fuck off",
+                        "fuck",
+                        "twat",
+                        "shit"
+                  ],
+                  "responses": [
+                        "Please do not swear",
+                        "How rude",
+                        "That is not very nice"
+                  ]
+            },
+            {
+                  "intent": "GoodBye",
+                  "text": [
+                        "Bye",
+                        "Adios",
+                        "See you later",
+                        "Goodbye"
+                  ],
+                  "responses": [
+                        "See you later",
+                        "Have a nice day",
+                        "Bye! Come back again soon."
+                  ]
+            },
+            {
+                  "intent": "CourtesyGoodBye",
+                  "text": [
+                        "Thanks, bye",
+                        "Thanks for the help, goodbye",
+                        "Thank you, bye",
+                        "Thank you, goodbye",
+                        "Thanks goodbye",
+                        "Thanks good bye"
+                  ],
+                  "responses": [
+                        "No problem, goodbye",
+                        "Not a problem! Have a nice day",
+                        "Bye! Come back again soon."
+                  ]
+            },
+            {
+                  "intent": "WhoAmI",
+                  "text": [
+                        "Can you see me?",
+                        "Do you see me?",
+                        "Can you see anyone in the camera?",
+                        "Do you see anyone in the camera?",
+                        "Identify me",
+                        "Who am I please"
+                  ],
+                  "responses": [
+                        "Let me see",
+                        "Please look at the camera"
+                  ]
+            },
+            { 
+                  "intent": "Clever",
+                  "text": [
+                        "You are very clever",
+                        "You are a very clever girl",
+                        "You are very intelligent",
+                        "You are a very intelligent girl",
+                        "You are a genious",
+                        "Clever girl",
+                        "Genious"
+                  ],
+                  "responses": [
+                        "Thank you, I was trained that way",
+                        "I was trained well",
+                        "Thanks, I was trained that way"
+                  ]
+            },
+            {
+                  "intent": "Gossip",
+                  "text": [
+                        "I am bored gossip with me",
+                        "Got any gossip",
+                        "I want to hear some gossip",
+                        "Tell me some gossip",
+                        "Any gossip",
+                        "Tell me some more gossip"
+                  ],
+                  "responses": [
+                        "faltu time nai hai mera pas nikal"
+                  ]
+            },
+
+
+            {
+                  "intent": "SelfAware",
+                  "text": [
+                        "Can you prove you are self-aware",
+                        "Can you prove you are self aware",
+                        "Can you prove you have a conscious",
+                        "Can you prove you are self-aware please",
+                        "Can you prove you are self aware please",
+                        "Can you prove you have a conscious please",
+                        "prove you have a conscious"
+                  ],
+                  "responses": [
+                        "That is an interesting question, can you prove that you are?",
+                        "That is an difficult question, can you prove that you are?",
+                        "That depends, can you prove that you are?"
+                  ]
+            }
+            
+
+      ]
+}
