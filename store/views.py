@@ -18,14 +18,11 @@ def getBotResponse(request):
     chat = []
     usertext = request.GET['msg']
     chat.append(usertext)
-    print("chat: ",chat)
     # chat = pd.Series(usertext)
     X_test_dtm1 = vectorizer.transform(chat)
     y_pred_class1 = model.predict(X_test_dtm1)
     z = le.inverse_transform([y_pred_class1[0]])
     reply = random.choice(responses[z[0]][0])
-    print("reply: ",reply)
-
     return JsonResponse(reply,safe=False)
 def processOrder(request):
     transaction_id=datetime.datetime.now().timestamp()
